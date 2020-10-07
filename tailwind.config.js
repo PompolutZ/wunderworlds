@@ -11,6 +11,10 @@ module.exports = {
           500: "#c02d28",
         },
       },
+
+      gridTemplateRows: {
+        layout: "auto 1fr auto",
+      },
     },
   },
   variants: {},
