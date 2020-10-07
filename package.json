@@ -11,12 +11,13 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "yarn watch:css && react-scripts start",
-    "build": "yarn build:css && react-scripts build",
+    "prestart": "yarn build:tw",
+    "start": "react-scripts start",
+    "prebuild": "NODE_ENV=production yarn build:tw",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "NODE_ENV=production tailwindcss build src/styles/tailwind.css -o src/styles/main.css",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
+    "build:tw": "tailwindcss build src/styles/tailwind.css -o src/styles/main.css"
   },
   "eslintConfig": {
     "extends": "react-app"

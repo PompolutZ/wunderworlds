@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .eslintcache
+
+# we will ignore main.css file because its compiled from tailwind.css file
+src/styles/main.css
